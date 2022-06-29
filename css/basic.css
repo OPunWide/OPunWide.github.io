@@ -1,2 +1,50 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-h1 { color: blue; }
+h1.title {
+    margin: 0 0 1em 0;
+    padding: 1em;
+    background: hsl(45deg 65% 90% / 99%);
+}
+
+body {
+    text-align: center;
+    color: hsl(0deg 0% 10%);
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: small;
+    line-height: 1.25em;
+    background: hsl(208deg 38% 62%);
+}
+
+.the-content {
+    text-align: left;
+    margin: 2em 0;
+    background-color: hsl(40deg 20% 93%);
+    padding: .5em 1em;
+    color: hsl(208deg 10% 10%);
+    max-width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .the-content {
+        width: 480px;
+        margin: 2em auto;
+        box-shadow: 0 0 5px 1px hsl(238deg 25% 10% / 50%);
+        border-radius: 0.5em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .the-content {
+        width: 80%;
+    }
+}
+
+h1 { 
+    color: hsl(208deg 30% 23%); 
+}
